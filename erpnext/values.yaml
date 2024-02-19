@@ -237,7 +237,7 @@ persistence:
     storageClass: "nfs"
   logs:
     # Container based log search and analytics stack recommended
-    enabled: false
+    enabled: true
     existingClaim: ""
     size: 8Gi
     storageClass: "nfs"
@@ -246,7 +246,7 @@ persistence:
   ingress:
   ingressName: ""
   className: ""
-  enabled: true
+  enabled: false
   annotations:
     kubernetes.io/ingress.class: nginx
     #kubernetes.io/tls-acme: "true"
@@ -269,7 +269,7 @@ persistence:
 
 jobs:
   volumePermissions:
-    enabled: false
+    enabled: true
     backoffLimit: 0
     resources: {}
     nodeSelector: {}

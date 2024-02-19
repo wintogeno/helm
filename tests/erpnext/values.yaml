@@ -1,5 +1,5 @@
 mariadb:
-  enabled: false
+  enabled: true
 
 dbHost: mariadb.mariadb.svc.cluster.local
 dbRootUser: root
